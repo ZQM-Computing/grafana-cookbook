@@ -15,7 +15,7 @@ A **Grafana cookbook** for dashboards, datasources, and alerts for geospatial st
 
 ## Repository role and status
 
-**Status:** Active, public — seeding. Pattern passes land in follow-up work from fleet-verified setups; the tables below list what is planned, not what is already written.
+**Status:** Active, public — first pattern pass written (design-only, gate 1 target; runtime validation pending). The table below lists what is written; no pattern has been runtime-validated yet.
 
 **What this repository is:** Grafana patterns — see the table below.
 
@@ -33,28 +33,31 @@ Platform engineers who visualize fleet and service health.
 - Prometheus as a datasource (see prometheus-cookbook)
 - Bash or PowerShell for the API passes
 
-## Patterns (planned)
+## Patterns
 
-| # | Example | What it will demonstrate |
-|---|---------|--------------------------|
-| 01 | `01-datasource-api` | Provisioning a Prometheus datasource via the API (UID path) |
-| 02 | `02-dashboard` | Building a dashboard from panels and variables |
-| 03 | `03-alerts` | Alert rules and notification channels |
-| 04 | `04-prometheus-pairing` | Pairing with Prometheus scrape jobs for a full stack view |
+| # | Example | Status | What it demonstrates |
+|---|---------|--------|----------------------|
+| 01 | [01-datasource-api](examples/01-datasource-api/README.md) | Written (design-only) | Provisioning a Prometheus datasource via the API (UID path) |
+| 02 | [02-dashboard](examples/02-dashboard/README.md) | Written (design-only) | Building a dashboard from panels and variables |
+| 03 | [03-alerts](examples/03-alerts/README.md) | Written (design-only) | Alert rules and notification channels |
+| 04 | [04-prometheus-pairing](examples/04-prometheus-pairing/README.md) | Written (design-only) | Pairing with Prometheus scrape jobs for a full stack view |
 
 ## Repository layout
 
 ```text
 grafana-cookbook/
-├── examples/          # pattern passes, landing in follow-up work
+├── examples/01-datasource-api/      # API provisioning, UID path
+├── examples/02-dashboard/           # panels + variables
+├── examples/03-alerts/              # rules + contact points
+├── examples/04-prometheus-pairing/  # scrape jobs + health checks
 ├── README.md
 └── LICENSE
 ```
 
 ## Roadmap
 
-- First pattern pass: the first two table rows
-- Second pass: the remaining rows, from fleet-verified setups
+- First pattern pass: complete (all 4 patterns, design-only).
+- Next: gate-3 runtime validation against the fleet's Grafana installs.
 
 ## Contributing
 

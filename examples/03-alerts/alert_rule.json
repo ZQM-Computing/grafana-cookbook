@@ -1,0 +1,1 @@
+{"data":[{"expr":"up{job=\"windows_exporter\"} == 0","for":"5m","labels":{"severity":"warning"},"refId":"A","title":"WindowsExporterDown"}],"folderTitle":"Example alerts","ruleGroup":"example-fleet-health","title":"WindowsExporterDown"}

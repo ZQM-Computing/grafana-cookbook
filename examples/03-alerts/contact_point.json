@@ -1,0 +1,1 @@
+{"name":"example-webhook-placeholder","receivers":[{"name":"example-webhook-placeholder","settings":{"url":"https://example.invalid/alerts-hook"},"type":"webhook"}]}
