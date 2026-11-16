@@ -11,7 +11,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-A **Grafana cookbook** for dashboards, datasources, and alerts for geospatial stacks. Patterns are drawn from the ZQM fleet's Grafana 13.2.4 installs on Node-1 and Node-3, including the v13 datasource-API quirk: the UID proxy path works, the numeric-id path 404s. Change the default admin credentials before exposing anything — that is a standing fleet follow-up, not a pattern. It is intended for Platform engineers who visualize fleet and service health. Validate each pattern against your own data, software versions, and operating environment before adopting it.
+A **Grafana cookbook** for dashboards, datasources, and alerts for geospatial stacks. Patterns are drawn from the ZQM fleet's Grafana 13.2.4 installs on Node-1 and Node-3 (as of Oct 2026; verify against the current fleet), including the v13 datasource-API quirk: the UID proxy path works, the numeric-id path 404s. Change the default admin credentials before exposing anything — that is a standing fleet follow-up, not a pattern. It is intended for Platform engineers who visualize fleet and service health. Validate each pattern against your own data, software versions, and operating environment before adopting it.
 
 ## Repository role and status
 
